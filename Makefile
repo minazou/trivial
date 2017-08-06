@@ -1,11 +1,14 @@
 .phony: clean
 
-all: dutch bsearch permutation
+all: dutch bsearch permutation bsearch_r
 
 clean:
-	rm -rfv dutch bsearch permutation
+	rm -rfv dutch bsearch permutation bsearch_r
 
 bsearch: bsearch.c
+	gcc $^ -o $@
+
+bsearch_r: bsearch_r.c
 	gcc $^ -o $@
 
 dutch: dutch.c
