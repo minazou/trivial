@@ -6,7 +6,7 @@ using namespace std;
 
 vector<int> compute_f(const string& pattern) {
     vector<int> f;
-    f.push_back(1);
+    f.push_back(2);
     return f; 
 }
 
