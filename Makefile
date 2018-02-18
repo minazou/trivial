@@ -1,9 +1,9 @@
 .phony: clean
 
-all: dutch bsearch permutation bsearch_r
+all: dutch bsearch permutation bsearch_r quicksort
 
 clean:
-	rm -rfv dutch bsearch permutation bsearch_r
+	rm -rfv dutch bsearch permutation bsearch_r quicksort
 
 bsearch: bsearch.c
 	gcc $^ -o $@
@@ -17,3 +17,5 @@ dutch: dutch.c
 permutaion: permutation.c
 	gcc $^ -o $@
 
+quicksort: quicksort.c
+	gcc $^ -o $@
